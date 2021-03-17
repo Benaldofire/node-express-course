@@ -31,3 +31,19 @@ app.listen(8000, function(){
     console.log("server is running")
 })
 
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+app.post('/login', function(req,res){
+    const username=req.body.username;
+    const password=req.body.password;
+
+    const mockUserData="billyTheKid";
+    const mockPassword="superSecret";
+
+    if(username===mockUsername && password===mockPassword){
+        
+    }
+})
+
+
